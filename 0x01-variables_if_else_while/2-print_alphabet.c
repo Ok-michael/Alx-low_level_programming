@@ -8,7 +8,7 @@
  * Return: 
  */
 
-int main(void)
+int main (void)
 {
 	char alph = 'a';
 
@@ -18,5 +18,5 @@ int main(void)
 		alph++;
 	}
 	putchar('\n');
-	return;
+	return (0)
 }
