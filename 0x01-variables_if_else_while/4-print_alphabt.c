@@ -12,9 +12,9 @@ int main(void)
 
 	while (sm_ltr <= 'z')
 	{
-		sm_ltr++;
 		if (sm_ltr != 'e' && sm_ltr != 'q')
 			putchar(sm_ltr);
+		sm_ltr++;
 	}
 	return (0);
 }
