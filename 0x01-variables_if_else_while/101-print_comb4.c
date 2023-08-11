@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main: Entry point to the program
- * declare three integers p, q, r
- * use them in nexted loops to create a beauty 
- * from numbers.
+ * main - this program declares three integers p,q,r
+ * and uses it in some beautiful ways to create some 
+ * beautiful number combinations
+ * It uses three nexted loops to achieve this
  * Return: main returns 0 when everything goes well
  */
 int main(void)
@@ -21,11 +21,11 @@ int main(void)
 				putchar('0' + q);
 				putchar('0' + r);
 			}
-			if (p < 7 || (p ==7 && q <8) ||(p ==7 && q == 8 && r < 9))
-			{
-				putchar(',');
-				putchar(' ');
-			}
+				if (p < 7 || (p == 7 && q < 8) || (p == 7 && q == 8 && r < 9))
+				{
+					putchar(',');
+					putchar(' ');
+				}
 		}
 	}
 	putchar('\n');
