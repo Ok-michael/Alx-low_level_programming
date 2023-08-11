@@ -13,10 +13,12 @@ int main(void)
 	while (sm_ltr <= 'z')
 	{
 		sm_ltr++;
-		if (sm_ltr != ('e' && 'q'))
-		{
+		if (sm_ltr = 'e')
+			continue;
+		else if (sm_ltr = 'q')
+			continue;
+		else
 			putchar(sm_ltr);
-		}	
 	}
 	return (0);
 }
