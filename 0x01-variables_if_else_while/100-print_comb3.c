@@ -18,7 +18,7 @@ int main(void)
 			if (p < 8 || q < 9)
 			{
 				putchar(',');
-				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
