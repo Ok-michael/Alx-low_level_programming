@@ -8,9 +8,10 @@
 int main(void)
 {
 	int p, q;
+
 	for (p = 0; p < 10; p++)
 	{
-		for(q = p +1; q < 10; q++)
+		for (q = p + 1; q < 10; q++)
 		{
 			putchar('0' + p);
 			putchar('0' + q);
@@ -21,5 +22,6 @@ int main(void)
 			}
 		}
 	}
-	return 0;
+	putchar('\n');
+	return (0);
 }
