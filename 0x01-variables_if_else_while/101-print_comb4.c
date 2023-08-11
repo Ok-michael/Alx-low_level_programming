@@ -2,8 +2,7 @@
 
 /**
  * main - this program declares three integers p,q,r
- * and uses it in some beautiful ways to create some 
- * beautiful number combinations
+ * and uses it in some beautiful ways to create some number combinations
  * It uses three nexted loops to achieve this
  * Return: main returns 0 when everything goes well
  */
