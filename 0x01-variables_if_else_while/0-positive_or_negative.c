@@ -2,7 +2,12 @@
 #include <time.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ * main - declare and integer n
+ * assign a random number to n each time the program is run
+ * finally checks if the number is positive, negative or zero
+ * and prints a corresponding message.
+ */
 int main(void)
 {
 	int n;
@@ -10,11 +15,10 @@ int main(void)
 	srand(time(0));
 	n = rand() -RAND_MAX / 2;
 	if ( n > 0)
-		puts("is positive";)
+		printf("%i is positive\n", n)
 	else if ( n == 0)
-		puts("is zero");
+		printf("%i is zero\n", n);
 	else
-		puts("is negative");
+		printf("%i is negative\n", n);
 	return (0);
 }
-
