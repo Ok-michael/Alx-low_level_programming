@@ -14,9 +14,9 @@ int main(void)
 	{
 		sm_ltr++;
 		if (sm_ltr != ('e' || 'q')
-				{
-					putchar(sm_ltr);
-				}	
+		{
+			putchar(sm_ltr);
+		}	
 	}
 	return (0);
 }
