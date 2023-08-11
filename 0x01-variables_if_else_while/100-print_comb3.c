@@ -14,11 +14,12 @@ int main(void)
 		{
 			putchar('0' + p);
 			putchar('0' + q);
-			if (p < 8 || q < )
+			if (p < 8 || q < 9)
 			{
 				putchar(',');
 				putchar(',');
 			}
 		}
 	}
+	return 0;
 }
