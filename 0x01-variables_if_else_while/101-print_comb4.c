@@ -19,6 +19,7 @@ int main(void)
 				putchar('0' + p);
 				putchar('0' + q);
 				putchar('0' + r);
+				putchar(',' + ' ');
 			}
 				if (p < 7 || (p == 7 && q < 8) || (p == 7 && q == 8 && r < 9))
 				{
