@@ -7,20 +7,21 @@
  */
 int main()
 {
-    for (int i = 0; i < 10; i++)
-    {
-        for (int j = i + 1; j < 10; j++)
-       	{
-            putchar('0' + i);
-            putchar('0' + j);
-            if (i < 8 || j < 9)
-	    {
-                putchar(',');
-                putchar(' ');
-            }
-        }
-    }
-    putchar('\n');
-    return 0;
+	int p, q;
+	for (p = 0; p < 10; p++)	
+	{
+        	for (q = p + 1; q < 10; q++)
+		{
+			putchar('0' + p);
+        		putchar('0' + q);
+            		if (p < 8 || q < 9)
+			{
+                		putchar(',');
+                		putchar(' ');
+        		}
+		}
+	}
+	putchar('\n');
+	return 0;
 }
 
