@@ -10,23 +10,26 @@ int main(void)
 {
 	int p, q, r;
 
-	for (p = 0; p < 10; p++)
+	for (p = '0'; p < '9'; p++)
 	{
-		for (q = p + 1; q < 10; q++)
+		for (q = p + 1; q <= '9'; q++)
 		{
-			for (r = q + 1; r < 10; r++)
+			for (r = q + 1; r <= '9'; r++)
 			{
-				putchar('0' + p);
-				putchar('0' + q);
-				putchar('0' + r);
-			}
-				if (p != 7 || q != 8 || r != 9)
+				if ((q != p) != r)
 				{
+					putchar(p);
+					putchar(q);
+					putchar(r);
+					if (p == '7' && q == '8')
+						continue;
 					putchar(',');
 					putchar(' ');
 				}
+			}
 		}
 	}
+
 	putchar('\n');
 	return (0);
 }
