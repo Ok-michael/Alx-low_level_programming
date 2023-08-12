@@ -12,9 +12,9 @@ int main(void)
 {
 	int card_char = 48, cnt;
 	
-	for(cnt 0; cnt <10; cnt++)
+	for(cnt = 0; cnt <10; cnt++)
 	{
-		putchar(48 + cnt);
+		putchar(card_char + cnt);
 	}
 	putchar('\n');
 	return (0);
