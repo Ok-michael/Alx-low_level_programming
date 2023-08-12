@@ -11,7 +11,7 @@
 int main(void)
 {
 	int card_char = 48, cnt;
-	
+
 	for (cnt = 0; cnt < 10; cnt++)
 	{
 		putchar(card_char + cnt);
