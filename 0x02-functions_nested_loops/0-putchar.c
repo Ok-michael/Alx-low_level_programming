@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include "main.h"
 
 /**
  * main - this function prints the word simply _putchar
@@ -7,11 +7,11 @@
  */
 int main(void)
 {
-	char txt[9] = "_putchar";
-	int ctn = 1;
+	char *txt = "_putchar";
+	int ctn;
 
-	for (ctn = 0; ctn < 9; ctn++)
+	for (ctn = 0; txt[ctn] != '\0'; ctn++)
 	       _putchar(txt[ctn]);
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
