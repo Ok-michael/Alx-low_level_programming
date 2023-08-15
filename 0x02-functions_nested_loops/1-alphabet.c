@@ -3,6 +3,7 @@
 /**
  * main - print all the small letters
  * Return: return 0 if everything goes on well
+ */
 void print_alphabet(void)
 {
 	char ch;
