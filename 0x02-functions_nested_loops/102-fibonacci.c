@@ -15,7 +15,7 @@ int main(void)
 	{
 		if (k != 20365011074)
 		{
-			printf("%ld\n, ", k);
+			printf("%ld, ", k);
 		}
 		else
 		{
