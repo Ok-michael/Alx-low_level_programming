@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	unsigned long sumiii = 0, sumv = 0, sum = 0;
+	unsigned long int sumiii = 0, sumv = 0, sum = 0;
 	int k;
 
 	for (k = 0; k < 1024; ++k)
