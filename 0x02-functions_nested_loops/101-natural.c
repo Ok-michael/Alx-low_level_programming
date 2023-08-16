@@ -1,4 +1,4 @@
-#inlcude < stdio.h >
+#inlcude <stdio.h>
 #include "main.h"
 
 /**
@@ -17,7 +17,7 @@ int main(void)
 		if ((k % 3) == 0)
 			sumiii += i;
 		else if ((i % 5) == 0)
-			sumv += i;
+			sumv += k;
 	}
 	sum = sumiii + sumv;
 	printf("%lu\n", sum);
