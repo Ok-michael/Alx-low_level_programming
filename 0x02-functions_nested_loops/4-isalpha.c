@@ -2,7 +2,7 @@
 
 /**
  * _isalpha - this function checks if the passed parameter is an alphebet
- * @Char: this function accepts an integer Char
+ * @ch: this function accepts an integer ch
  * Return: this function returns True or False depending on the parameter
  * passed
  */
