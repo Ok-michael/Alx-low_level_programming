@@ -9,13 +9,13 @@ void print_to_98(int k)
 {
 	if (k < 98)
 	{
-		while (k <= 98)
+		while (k < 98)
 		{
 			printf("%d, ", k);
 				k++;
 		}
 	}
-	else
+	else if (k > 98)
 	{
 		while (k > 98)
 		{
@@ -23,4 +23,5 @@ void print_to_98(int k)
 			k--;
 		}
 	}
+	printf("98\n");
 }
