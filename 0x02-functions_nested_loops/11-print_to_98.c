@@ -17,7 +17,7 @@ void print_to_98(int k)
 	}
 	else
 	{
-		while (n > 98)
+		while (k > 98)
 		{
 			print("%d, ", k);
 			k--;
