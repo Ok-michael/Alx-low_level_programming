@@ -11,7 +11,7 @@ void times_table(void)
 
 	for (row = 0; row < 10; row++)
 	{
-		for (column = 0; column < 10; colum++)
+		for (column = 0; column < 10; column++)
 		{
 			prod = row * column;
 			tens = prod / 10;
