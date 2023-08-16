@@ -30,7 +30,7 @@ int main(void)
 		k_two += j_two;
 		j_two = k_two - j_two;
 	}
-	printf(i\n");
+	printf("\n");
 	return (0);
 }
 
