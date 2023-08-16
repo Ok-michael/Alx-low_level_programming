@@ -24,13 +24,13 @@ int main(void)
 	for (i = 92; i < 99; ++i)
 	{
 		printf(", %lu", k_one + (k_two / 1000000000));
-		printf("%lu", k_two % 1000000000));
-		k_0ne += j_one;
+		printf("%lu", (k_two % 1000000000));
+		k_one += j_one;
 		j_one = k_one - j_one;
-		k_two += j_tw0;
+		k_two += j_two;
 		j_two = k_two - j_two;
 	}
-	printf("\n');
+	printf('\n');
 	return (0);
 }
 
