@@ -6,5 +6,7 @@
  * Return: this function returns True or False depending on the parameter
  * passed
  */
-int _isalpha(int Char)
-	return ((Char >= 'a' && Char <= 'z') || (Char >= 'A' && Char <= 'Z'));
+int _isalpha(int ch)
+{
+	return ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'));
+}
