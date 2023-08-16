@@ -4,7 +4,7 @@
  * Return: returns a boolean True if the check is successfull
  * otherwise it returns False
  */
-int _islower(char Char)
+int _islower(int Char)
 {
 	return (Char >= 'a' && Char <= 'z');
 }
