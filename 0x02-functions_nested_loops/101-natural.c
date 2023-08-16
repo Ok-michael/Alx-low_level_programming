@@ -16,7 +16,7 @@ int main(void)
 	{
 		if ((k % 3) == 0)
 			sumiii += k;
-		else if ((i % 5) == 0)
+		else if ((k % 5) == 0)
 			sumv += k;
 	}
 	sum = sumiii + sumv;
