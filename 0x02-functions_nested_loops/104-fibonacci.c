@@ -15,7 +15,7 @@ int main(void)
 	{
 		printf(", %lu", k);
 		k = k + j;
-		j = k + j;
+		j = k - j;
 	}
 	j_one = j / 1000000000;
 	j_two = j % 1000000000;
@@ -30,7 +30,7 @@ int main(void)
 		k_two += j_two;
 		j_two = k_two - j_two;
 	}
-	printf("\n");
+	printf(i\n");
 	return (0);
 }
 
