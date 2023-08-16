@@ -15,7 +15,7 @@ int main(void)
 	for (k = 0; k < 1024; ++k)
 	{
 		if ((k % 3) == 0)
-			sumiii += i;
+			sumiii += k;
 		else if ((i % 5) == 0)
 			sumv += k;
 	}
