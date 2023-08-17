@@ -1,10 +1,10 @@
 #include <stdio.h>
+
 /**
  * main - check the code
  *
  * Return: void.
  */
-
 int main(void)
 {
 
@@ -26,7 +26,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%i", i);
+			printf("%i", p);
 		}
 
 		if (p != 100)
