@@ -1,32 +1,28 @@
 #include "main.h"
 
 /**
- * print_triangle - check for a digit
- * @size : integer type
+ * more_numbers - prints more numbers
  * Return:void
  */
-void print_triangle(int size)
+
+void more_numbers(void)
 {
+	char n, c;
+	int k = 0;
 
-	int p = 1, q;
-
-	while (p <= size && size > 0)
+	while (k < 10)
 	{
-		q = 0;
-		while (q < size - p)
+		for (n = 0; n <= 14; n++)
 		{
-			_putchar(' ');
-			q++;
-		}
-		q = 0;
-		while (q < p)
-		{
-			_putchar('#');
-			q++;
+			c = n;
+			if (n > 9)
+			{
+				_putchar('1');
+				c = n % 10;
+			}
+			_putchar('0' + c);
 		}
 		_putchar('\n');
-		p++;
+		k++;
 	}
-	if (p == 1)
-	_putchar('\n');
 }
