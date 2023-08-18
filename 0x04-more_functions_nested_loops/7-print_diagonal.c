@@ -5,7 +5,6 @@
  * @n : number of \\ to be printed
  * Return: Always 0.
  */
-
 void print_diagonal(int n)
 {
 
