@@ -5,25 +5,31 @@
  * @n : number of \\ to be printed
  * Return: Always 0.
  */
-void print_diagonal(int n)
+#include "main.h"
+
+/**
+ * more_numbers - prints more numbers
+ * Return:void
+ */
+
+void more_numbers(void)
 {
+	char n, c;
+	int i = 0;
 
-	int p = 0, q;
-
-	while (p < n && n > 0)
+	while (i < 10)
 	{
-		q = 0;
-
-		while (q < p)
+		for (n = 0; n <= 14; n++)
 		{
-			_putchar(' ');
-			q++;
+			c = n;
+			if (n > 9)
+			{
+				_putchar('1');
+				c = n % 10;
+			}
+			_putchar('0' + c);
 		}
-		_putchar('\\');
 		_putchar('\n');
-		q++;
+		i++;
 	}
-
-	if (q == 0)
-		_putchar('\n');
 }
