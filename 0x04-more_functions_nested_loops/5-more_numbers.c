@@ -5,25 +5,24 @@
  * @size : integer type
  * Return:void
  */
-
 void print_triangle(int size)
 {
 
-	int p = 1, pp;
+	int p = 1, q;
 
 	while (p <= size && size > 0)
 	{
 		pp = 0;
-		while (pp < size - p)
+		while (q < size - p)
 		{
 			_putchar(' ');
-			pp++;
+			q++;
 		}
-		pp = 0;
-		while (pp < p)
+		q = 0;
+		while (q < i)
 		{
 			_putchar('#');
-			pp++;
+			q++;
 		}
 		_putchar('\n');
 		p++;
