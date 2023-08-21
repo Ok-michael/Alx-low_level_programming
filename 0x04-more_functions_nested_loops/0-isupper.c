@@ -10,7 +10,7 @@
  */
 int _isupper(int Char)
 {
-	if (Char >= 65 && Char < 89)
+	if (Char > 64 && Char < 91)
 	{
 		return (1);
 	}

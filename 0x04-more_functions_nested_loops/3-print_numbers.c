@@ -10,6 +10,9 @@ void print_numbers(void)
 	int ctr = 48;
 
 	while (ctr < 58)
+	{
 		_putchar(ctr);
+		ctr++;
+	}
 	_putchar('\n');
 }
