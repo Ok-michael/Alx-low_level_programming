@@ -16,8 +16,10 @@ void rev_string(char *s)
 	{
 		length++;
 		tmp++;
+		s++;
 	}
 	tmp--;
+	s--;
 	for (i = 0; i < length; i++)
 	{
 		*tmp = *s;
