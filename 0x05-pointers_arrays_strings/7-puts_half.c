@@ -10,7 +10,7 @@ void puts_half(char *str)
 {
 	int ctn = 0, k;
 
-	while(ctn >= 0)
+	while (ctn >= 0)
 	{
 		if (str[ctn] == '\0')
 			break;
