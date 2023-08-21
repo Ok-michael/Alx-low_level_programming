@@ -6,7 +6,7 @@
  * @str: this function accepts a string parameter
  * Return: this function returns void
  */
-vvoid puts_half(char *str)
+void puts_half(char *str)
 {
 	int ctn = 0, k;
 
