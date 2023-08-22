@@ -2,8 +2,8 @@
 
 /**
  * puts_half -  this function prints half of a string.
- * @str: receives a string input
- * Return: no return.
+ * @str: it receives a string input
+ * Return: this function return void
  */
 void puts_half(char *str)
 {
@@ -25,3 +25,4 @@ void puts_half(char *str)
 		_putchar(str[i]);
 	_putchar('\n');
 }
+
