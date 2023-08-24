@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strcat - this function concatenates or joins two
+ * _strncat - this function concatenates or joins two
  * strings together
  * @dest: this parameter gets the concatenation from
  * the second parameter.
@@ -17,7 +17,7 @@ char *_strncat(char *dest, char *src, int n)
 		dest_ctn++;
 	}
 
-	while (src_ctn >= 0 && src[src_ctn] < n)
+	while (src_ctn < n && src[src_ctn] != '\0')
 	{
 		dest[dest_ctn] = src[src_ctn];
 		dest_ctn++;
