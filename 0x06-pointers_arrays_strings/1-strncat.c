@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strcat - this function concatenates or joins two
+ * _strncat - this function concatenates or joins two
  * strings together
  * @dest: this parameter gets the concatenation from
  * the second parameter.
