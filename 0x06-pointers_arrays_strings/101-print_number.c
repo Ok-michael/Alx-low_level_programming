@@ -18,7 +18,6 @@ void print_number(int n)
 		_putchar(45);
 		p = -n;
 	}
-
 	q = p;
 	cntr = 1;
 
@@ -27,7 +26,6 @@ void print_number(int n)
 		q = q / 10;
 		cntr = cntr * 10;
 	}
-
 	for (; cntr >= 1; cntr /= 10)
 	{
 		_putchar(((p / cntr) % 10) + 48);
