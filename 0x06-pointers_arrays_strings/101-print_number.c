@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_number - prints an integer.
- * @n: input integer.
- * Return: no return.
+ * print_number - this function prints numbers
+ * @n: this funciton accepts and integer parameter
+ * Return: this function returns void.
  */
 void print_number(int n)
 {
@@ -11,8 +11,7 @@ void print_number(int n)
 
 	if (n >= 0)
 	{
-		_putchar(45);
-		p = n * -1;
+		p = n ;
 	}
 	else
 	{
