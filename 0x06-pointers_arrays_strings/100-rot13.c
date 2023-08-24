@@ -1,42 +1,36 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * rot13 - this function take encripts a string using
  * rot13
- * @input: this function takes a string as input
- * Return: this function returns the encripted 
+ * @words: this function takes a string as input
+ * Return: this function returns the encripted
  * string
  */
-char *rot13(char *input)
+char *rot13(char *words)
 {
-	char *encr_input = (char *)malloc(strlen(input) + 1);
-    	int i;
+	char *encr_word = (char *)malloc(strlen(words) + 1);
+	int i;
 
-	if (input == NULL)
-        	return NULL;
-    	if (output == NULL)
-        	return NULL;
-    	for (i = 0; input[i] != '\0'; i++) 
+	if (words == NULL)
+		return (NULL);
+	if (encr_word == NULL)
+		return (NULL);
+	for (i = 0; words[i] != '\0'; i++)
 	{
-        	char c = input[i];
-        	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		{
-            		if (c >= 'a' && c <= 'z') 
-			{
-                		encr_input[i] = (((c - 'a') + 13) % 26) + 'a';
-            		}
-			else
-			{
-                	encr_input[i] = (((c - 'A') + 13) % 26) + 'A';
-            		}
-        	}
-		else
-		{
-            		encr_input[i] = c;
-        	}
-    	}
+		char c = words[i];
 
-    	encri_input[i] = '\0';
-    	return (encri_input;
+		if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+			if (c >= 'a' && c <= 'z')
+				encr_word[i] = (((c - 'a' + 13) % 26) + 'a';
+			else
+				encr_words[i] = (((c - 'A') + 13) % 26) + 'A';
+		else
+			encr_words[i] = c;
+	}
+	encr_words[i] = '\0';
+	return (encr_words);
 }
