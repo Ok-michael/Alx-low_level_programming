@@ -24,13 +24,15 @@ char *rot13(char *words)
 		char c = words[i];
 
 		if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		{
 			if (c >= 'a' && c <= 'z')
-				encr_word[i] = (((c - 'a' + 13) % 26) + 'a';
+				encr_word[i] = (((c - 'a') + 13) % 26) + 'a';
 			else
-				encr_words[i] = (((c - 'A') + 13) % 26) + 'A';
+				encr_word[i] = (((c - 'A') + 13) % 26) + 'A';
+		}
 		else
-			encr_words[i] = c;
+			encr_word[i] = c;
 	}
-	encr_words[i] = '\0';
-	return (encr_words);
+	encr_word[i] = '\0';
+	return (encr_word);
 }
