@@ -1,42 +1,28 @@
 #include "main.h"
-#include <stdlib.h>
-
 /**
- * rot13 - this function take encripts a string using
- * rot13
- * @input: this function takes a string as input
- * Return: this function returns the encripted 
- * string
+ * rot13 - this function encodes a string using rot13
+ * @s: input string.
+ * Return: the pointer to dest.
  */
-char *rot13(char *input)
+
+char *rot13(char *s)
 {
-	char *encr_input = (char *)malloc(strlen(input) + 1);
-    	int i;
+	int count = 0, i;
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	if (input == NULL)
-        	return NULL;
-    	if (output == NULL)
-        	return NULL;
-    	for (i = 0; input[i] != '\0'; i++) 
+	while (*(s + count) != '\0')
 	{
-        	char c = input[i];
-        	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		for (i = 0; i < 52; i++)
 		{
-            		if (c >= 'a' && c <= 'z') 
+			if (*(s + count) == alphabet[i])
 			{
-                		encr_input[i] = (((c - 'a') + 13) % 26) + 'a';
-            		}
-			else
-			{
-                	encr_input[i] = (((c - 'A') + 13) % 26) + 'A';
-            		}
-        	}
-		else
-		{
-            		encr_input[i] = c;
-        	}
-    	}
+				*(s + count) = rot13[i];
+				break;
+			}
+		}
+		count++;
+	}
 
-    	encri_input[i] = '\0';
-    	return (encri_input;
+	return (s);
 }
