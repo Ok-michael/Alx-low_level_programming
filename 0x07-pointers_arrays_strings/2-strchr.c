@@ -19,5 +19,4 @@ char *_strchr(char *s, char c)
 		k++;
 	}
 	return ('\0');
-}
 
