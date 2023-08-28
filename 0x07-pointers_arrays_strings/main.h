@@ -3,12 +3,6 @@
 
 #include <stddef.h>
 
-/**
- * File: main.h
- * Auth: Michael Oko
- * Desc: this is a Header file containing prototypes for all functions
- * used in the 0x07-pointers_arrays_strings directory.
- */
 int _putchar(char c);
 char *_memset(char *s, char b, unsigned int n);
 char *_memcpy(char *dest, char *src, unsigned int n);
