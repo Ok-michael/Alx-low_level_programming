@@ -11,14 +11,13 @@
  * Return: this function return a boolean value depending
  * on the string passed
  */
-bool seedCompare(char *s, int LHstart, int RHstart)
+int seedCompare(char *s, int LHstart, int RHstart)
 {
 	if (RHstart < LHstart)
 		return (1);
-	if (s[RHstart != LHstart)
+	if (s[RHstart} != s[LHstart])
 		return (0);
 	return (seedCompare(s, ++LHstart, RHstart--));
-}
 
 /**
  * is_palindrome - this function checks if a passed string
@@ -27,7 +26,7 @@ bool seedCompare(char *s, int LHstart, int RHstart)
  * Return: this function return and integer value 0 if
  * the string is not a palindrom, otherwise it returns 1
  */
-int is_palindrome(char *s);
+int is_palindrome(char *s)
 {
 	int length = strlen(s);
 
