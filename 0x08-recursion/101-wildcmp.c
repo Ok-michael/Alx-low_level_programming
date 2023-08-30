@@ -25,4 +25,4 @@ int seedCompare(char *strA, char *strB)
  * on the passed strings
  */
 int wildcmp(char *s1, char *s2)
-	return (eedCompare(s1, s2))
+	return (seedCompare(s1, s2))
