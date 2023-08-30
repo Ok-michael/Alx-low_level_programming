@@ -11,9 +11,9 @@
  */
 int sqr(int n, int k)
 {
-	if (k * K == n)
+	if (k * k == n)
 		return (k);
-	if (k * K < n)
+	if (k * k < n)
 		return (sqr(n, k+1));
 	return (-1);
 }
@@ -28,4 +28,5 @@ int sqr(int n, int k)
  * it returns -1
  */
 int _sqrt_recursion(int n)
-	return (sqr(n, 1));
+	n = sqr(n, 1)
+	return (n);
