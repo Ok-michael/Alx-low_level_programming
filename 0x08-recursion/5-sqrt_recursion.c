@@ -31,4 +31,4 @@ int _sqrt_recursion(int n)
 {
 	n = sqr(n, 1);
 	return (n);
-}	
+}
