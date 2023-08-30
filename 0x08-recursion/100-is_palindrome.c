@@ -25,7 +25,7 @@ int seedCompare(char *s, int LHstart, int RHstart)
  * lnt - this function calculates the length of a string
  * @s: this is the who's length is to be calculated
  * Return: this function return and integer
- */
+ *
 int lnt(char *s)
 {
 	char *ptr = s, k = 0;
@@ -37,6 +37,8 @@ int lnt(char *s)
 	}
 	return k;
 }
+*/
+
 /**
  * is_palindrome - this function checks if a passed string
  * is a palindrome
@@ -46,7 +48,7 @@ int lnt(char *s)
  */
 int is_palindrome(char *s)
 {
-	int length = lnt(s);
+	int length = strlen(s);
 
 	return (seedCompare(s, 0, length - 1));
 }
