@@ -15,7 +15,7 @@ int seedCompare(char *s, int LHstart, int RHstart)
 {
 	if (RHstart < LHstart)
 		return (1);
-	if (s[RHstart} != s[LHstart])
+	if (s[RHstart] != s[LHstart])
 		return (0);
 	return (seedCompare(s, ++LHstart, RHstart--));
 
