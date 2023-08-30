@@ -28,7 +28,7 @@ int seedCompare(char *s, int LHstart, int RHstart)
  */
 int lnt(char *s)
 {
-	int *ptr = &s, k = 0;
+	char *ptr = s, k = 0;
 
 	while(*ptr != '\0')
 	{
