@@ -7,13 +7,13 @@
  * @strB: this is the other string to be compared
  * Return: this function returns an integer
  */
-int seedCompare(char *strA, char *strB)
+int wildcmp(char *s1, char *s2)
 {
-	if (*strA == '\0' && *strB == '\0')
+	if (*s1 == '\0' && *s2 == '\0')
 		return (1);
-	if (*strA != *strB)
+	if (*s1 != *s2)
 		return (0);
-	return (seedCompare(strA + 1, strB + 1));
+	return (wildcmp(s1 + 1, s2 + 1));
 }
 
 /**
@@ -24,5 +24,7 @@ int seedCompare(char *strA, char *strB)
  * Return: this function returns a boolean value depending
  * on the passed strings
  */
+/*
 int wildcmp(char *s1, char *s2)
 	return (seedCompare(s1, s2))
+*/
