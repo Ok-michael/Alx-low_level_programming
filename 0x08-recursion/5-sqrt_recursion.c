@@ -19,7 +19,7 @@ int sqr(int n, int k)
 }
 
 /**
- * _sqrt_recursion: this function seeks the the square root
+ * _sqrt_recursion - this function seeks the the square root
  * of a passed argument in the set of natural numbers
  * @n: this is the number whose square root the function
  * seeks
