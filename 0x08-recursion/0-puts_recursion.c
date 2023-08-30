@@ -1,5 +1,4 @@
 #include "main.h"
- 
 /**
  * _puts_recursion - this function puts s string on the screen
  * followed by a newline
