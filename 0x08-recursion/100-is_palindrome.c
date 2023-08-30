@@ -9,6 +9,7 @@
  * where to start from the left hand side
  * @RHstart: this also tells the function where to start
  * from the righthand side
+ * @s: this is the string where our checks are carried out on
  * Return: this function return a boolean value depending
  * on the string passed
  */
