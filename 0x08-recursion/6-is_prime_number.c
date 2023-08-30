@@ -7,7 +7,7 @@
  * control the recursion
  * Return: this function returns a boolean value
  */
-int primeRecursive(int n, int div);
+int primeRecursive(int n, int div)
 {
 	if (n <= 1)
 		return (0);
