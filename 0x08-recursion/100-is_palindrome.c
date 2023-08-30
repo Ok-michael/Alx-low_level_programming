@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * seedCompare - this function actually does the major
