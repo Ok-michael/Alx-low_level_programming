@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * seedCompare - this function compare the corresponding letters
+ * wildcmp - this function compare the corresponding letters
  * of two string to verify if they are matches
- * @strA: this is one of the strings to be compared
- * @strB: this is the other string to be compared
+ * @s1: this is one of the strings to be compared
+ * @s2: this is the other string to be compared
  * Return: this function returns an integer
  */
 int wildcmp(char *s1, char *s2)
@@ -13,18 +13,5 @@ int wildcmp(char *s1, char *s2)
 		return (1);
 	if (*s1 != *s2)
 		return (0);
-	return (wildcmp(s1 + 1, s2 + 1));
+	return (wildcmp(s1 + 1, s2 + 1))
 }
-
-/**
- * wildcomp - this function uses the previous function
- * to tell if two strings are identical or not
- * @s1: one string to be compared
- * @s2: the other string to be compared
- * Return: this function returns a boolean value depending
- * on the passed strings
- */
-/*
-int wildcmp(char *s1, char *s2)
-	return (seedCompare(s1, s2))
-*/
