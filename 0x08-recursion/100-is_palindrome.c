@@ -1,5 +1,5 @@
 #include "main.h"
-#include <string.h>
+#include <string.hi
 
 /**
  * seedCompare - this function actually does the major
@@ -19,7 +19,24 @@ int seedCompare(char *s, int LHstart, int RHstart)
 	if (s[RHstart] != s[LHstart])
 		return (0);
 	return (seedCompare(s, ++LHstart, RHstart--));
+}
 
+/**
+ * lnt - this function calculates the length of a string
+ * @s: this is the who's length is to be calculated
+ * Return: this function return and integer
+ */
+int lnt(char *s)
+{
+	int *ptr = s, k = 0;
+
+	while(*ptr != '\0')
+	{
+		Ptr++;
+		k++;
+	}
+	return k;
+}
 /**
  * is_palindrome - this function checks if a passed string
  * is a palindrome
@@ -29,7 +46,7 @@ int seedCompare(char *s, int LHstart, int RHstart)
  */
 int is_palindrome(char *s)
 {
-	int length = strlen(s);
+	int length = lnt(s);
 
 	return (seedCompare(s, 0, length - 1));
 }
