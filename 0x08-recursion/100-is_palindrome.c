@@ -18,26 +18,8 @@ int seedCompare(char *s, int LHstart, int RHstart)
 		return (1);
 	if (s[RHstart] != s[LHstart])
 		return (0);
-	return (seedCompare(s, ++LHstart, RHstart--));
+	return (seedCompare(s, ++LHstart, --RHstart));
 }
-
-/**
- * lnt - this function calculates the length of a string
- * @s: this is the who's length is to be calculated
- * Return: this function return and integer
- *
-int lnt(char *s)
-{
-	char *ptr = s, k = 0;
-
-	while(*ptr != '\0')
-	{
-		ptr++;
-		k++;
-	}
-	return k;
-}
-*/
 
 /**
  * is_palindrome - this function checks if a passed string
