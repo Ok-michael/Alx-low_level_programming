@@ -28,5 +28,7 @@ int sqr(int n, int k)
  * it returns -1
  */
 int _sqrt_recursion(int n)
+{
 	n = sqr(n, 1);
 	return (n);
+}	
