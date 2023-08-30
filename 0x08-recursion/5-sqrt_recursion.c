@@ -14,7 +14,7 @@ int sqr(int n, int k)
 	if (k * k == n)
 		return (k);
 	if (k * k < n)
-		return (sqr(n, k+1));
+		return (sqr(n, k + 1));
 	return (-1);
 }
 
