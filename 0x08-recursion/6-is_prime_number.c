@@ -3,7 +3,7 @@
 /**
  * primeRecursive - this function checks if n is prime
  * @n: this number is check for primality
- * @div: this number derives from n and is used to 
+ * @div: this number derives from n and is used to
  * control the recursion
  * Return: this function returns a boolean value
  */
@@ -29,8 +29,7 @@ int is_prime_number(int n)
 {
 	if (n < 2)
 	{
-		return 0;
+		return (0);
 	}
 	return (primeRecursive(n, n - 1));
 }
-			
