@@ -1,9 +1,11 @@
+#ifndef MAIN_H
+#define MAIN_H
+
 /**
  * a main.h file containing the prototypes of all the functions
  * I'm going to be using in libmy.a library
  * author: Oko Michael
  */
-
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
@@ -24,3 +26,4 @@ char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
+#endif
