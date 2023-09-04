@@ -6,7 +6,7 @@
  * str_concat - this function oncatenates two strings.
  * @s1: this parameter is a string to be concatenated upon.
  * @s2: this parameter is the  string to be concatenated to s1.
- * Return: this function return NULL if the operation fails 
+ * Return: this function return NULL if the operation fails
  * otherwise it returns a pointer the newly-allocated space in
  * memory containing the concatenated strings.
  */
