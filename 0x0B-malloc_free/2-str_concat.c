@@ -40,7 +40,7 @@ char *str_concat(char *s1, char *s2)
 		if (s1[k] != '\0')
 		{
 			*pntr = s1[k];
-			Pntr++;
+			pntr++;
 		}
 		else
 		{
