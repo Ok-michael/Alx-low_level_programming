@@ -30,7 +30,7 @@ char *argstostr(int ac, char **av)
 	{
 		for (byte = 0; av[arg][byte]; byte++)
 			ptr[k++] = av[arg][byte];
-		str[k++] = '\n';
+		ptr[k++] = '\n';
 	}
 	str[n] = '\0';
 	return (ptr);
