@@ -3,51 +3,37 @@
 #include <stdio.h>
 
 /**
- * str_concat - this function oncatenates two strings s1 and s2.
- * @s1: this is one of the strings to be concatenated.
- * @s2: this is the other string to be concatenated with s1.
- * Return: If concatenation fails - NULL, otherwise - a pointer
- * to the newly-allocated space in memory
- * containing the concatenated strings.
+ * str_concat - this function oncatenates two strings.
+ * @s1: this parameter is a string to be concatenated upon.
+ * @s2: this parameter is the  string to be concatenated to s1.
+ * Return: this function return NULL if the operation fails 
+ * otherwise it returns a pointer the newly-allocated space in
+ * memory containing the concatenated strings.
  */
 char *str_concat(char *s1, char *s2)
 {
 	char *pntr;
-	int k = 0, m = 0, length = 0;
+	int k, l = 0, len = 0;
 
 	if (s1 == NULL)
 		s1 = "";
+
 	if (s2 == NULL)
 		s2 = "";
-	while (s1[k] != '\0')
-	{
-		length++;
-		k++;
-	}
-	k = 0;
-	while (s2[k] != '\0')
-	{
-		length++;
-		k++;
-	}
-	k = 0;
-	pntr = (char *)malloc(sizeof(char) * length + 1);
+
+	for (k = 0; s1[k] || s2[k]; k++)
+		len++;
+
+	pntr = (char *)malloc(sizeof(char) * len);
+
 	if (pntr == NULL)
 		return (NULL);
-	while (k <= length)
-	{
-		if (s1[k] != '\0')
-		{
-			*pntr = s1[k];
-			pntr++;
-		}
-		else
-		{
-			*pntr = s2[m];
-			pntr++;
-			m++;
-		}
-		k++;
-	}
+
+	for (k = 0; s1[k]; k++)
+		pntr[l] = s1[k];
+
+	for (k = 0; s2[k]; k++)
+		concat_str[l++] = s2[k];
+
 	return (pntr);
 }
