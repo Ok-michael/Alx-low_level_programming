@@ -4,7 +4,7 @@
 
 /**
  *_strdup - this function returns a pointer to a newly allocated space
- in memory which contains a copy of the string given as a parameter.
+ * in memory which contains a copy of the string given as a parameter.
  * @str: this string is the parameter the function accepts
  * Return: this function returns a pointer to the newly allocated memory
  */
@@ -15,12 +15,12 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
-	while(str[length] != '\0')
+	while (str[length] != '\0')
 		length++;
 	pntr = malloc(length * sizeof(*str) + 1);
 	if (pntr == 0)
 		return (NULL);
-	while(k < length)
+	while (k < length)
 	{
 		pntr[k] = str[k];
 		k++;
