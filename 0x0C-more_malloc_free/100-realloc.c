@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * _realloc - this function reallocates a memory passed as an argument
- * using malloc and free
+ * _realloc - this function reallocates a memory passed as an
+ * argument using malloc and free
  * @ptr: a pointer the memory to be reallocated
  * @old_size: the size in bytes of the allocated space for ptr
  * new_size: this is the size in bytes of the new pointer
