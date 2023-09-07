@@ -54,14 +54,14 @@ int _atoi(const char *str)
 	//check if string contain a non digit character
 	for(k = 0; s[k] != '\n'; k++)
 	{
-		if (s[i] < 48 || s[i] > 57)
+		if (s[k] < 48 || s[k] > 57)
 		{
 			/*fprintf(stderr, "Error: Non-digit character '%c' entered", s[i]);*/
 			return (0);
 		}
 	}
 	//convert the string to integer
-	for (k = 0; s[i] != '\0'; k++)
+	for (k = 0; s[k] != '\0'; k++)
 		result = result * 10 + (s[i] -'0');
 	//check for overflow
 	if (result > INT_MAX)
