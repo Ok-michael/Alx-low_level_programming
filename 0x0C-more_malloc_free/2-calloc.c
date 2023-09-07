@@ -20,7 +20,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	pntr = malloc(nmemb*size);
 	if (pntr == NULL)
 		return (NULL);
+	init = pntr;
 	for (; k < (nmemb*size); k++)
-		*(pntr + k) = '\0';
+		*(init + k) = '\0';
 	return (pntr);
 }
