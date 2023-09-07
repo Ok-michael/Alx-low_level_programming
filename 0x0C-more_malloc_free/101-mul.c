@@ -52,9 +52,9 @@ int _atoi(const char *str)
 		str++;
 	}
 	//check if string contain a non digit character
-	for(k = 0; s[k] != '\n'; k++)
+	for(k = 0; str[k] != '\n'; k++)
 	{
-		if (s[k] < 48 || s[k] > 57)
+		if (str[k] < 48 || str[k] > 57)
 		{
 			/*fprintf(stderr, "Error: Non-digit character '%c' entered", s[i]);*/
 			return (0);
@@ -62,7 +62,7 @@ int _atoi(const char *str)
 	}
 	//convert the string to integer
 	for (k = 0; s[k] != '\0'; k++)
-		result = result * 10 + (s[i] -'0');
+		result = result * 10 + (s[k] -'0');
 	//check for overflow
 	if (result > INT_MAX)
 	{
