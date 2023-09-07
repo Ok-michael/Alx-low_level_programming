@@ -20,7 +20,7 @@ void _puts(char *str)
 
 /**
  * _atoi - this function converts a string to an integer.
- * @s: char type string
+ * @s: this is a char type string
  * Return: integer converted
  */
 int _atoi(const char *s)
