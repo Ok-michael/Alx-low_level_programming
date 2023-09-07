@@ -27,21 +27,18 @@ void _puts(char *str)
 int _atoi(const char *str)
 {
 	int sign = 1;
-	unsigned long long result = 0;
+	unsigned long result = 0;
 	unsigned int k;
 
-	//check for empty string
 	if (str == NULL || *str == '\0')
 	{
 		/*fprintf(stderr, "Error: Empty string entered\n");*/
 		return (0);
 	}
-	//skip leading whitespaces
 	if (*str == ' ' || *str == '\t')
 	{
 		str++;
 	}
-	//check for sign
 	if (*str == '-')
 	{
 		sign = -1;
@@ -51,7 +48,6 @@ int _atoi(const char *str)
 	{
 		str++;
 	}
-	//check if string contain a non digit character
 	for(k = 0; str[k] != '\n'; k++)
 	{
 		if (str[k] < 48 || str[k] > 57)
@@ -60,10 +56,8 @@ int _atoi(const char *str)
 			return (0);
 		}
 	}
-	//convert the string to integer
 	for (k = 0; str[k] != '\0'; k++)
 		result = result * 10 + (str[k] -'0');
-	//check for overflow
 	if (result > INT_MAX)
 	{
 		/*fprintf(stderr, "Error: Integer overflow\n");*/
