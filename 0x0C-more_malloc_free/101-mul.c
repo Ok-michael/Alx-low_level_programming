@@ -61,7 +61,7 @@ int _atoi(const char *str)
 		}
 	}
 	//convert the string to integer
-	for (k = 0; s[k] != '\0'; k++)
+	for (k = 0; str[k] != '\0'; k++)
 		result = result * 10 + (s[k] -'0');
 	//check for overflow
 	if (result > INT_MAX)
