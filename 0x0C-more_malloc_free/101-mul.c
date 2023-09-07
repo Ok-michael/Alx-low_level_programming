@@ -23,26 +23,55 @@ void _puts(char *str)
  * @s: this is a char type string
  * Return: integer converted
  */
-int _atoi(const char *s)
+int _atoi(const char *str)
 {
 	int sign = 1;
-	unsigned long int resp = 0, firstNum, i;
+	unsigned long long result = 0;
+	unsigned int k;
 
-	for (firstNum = 0; !(s[firstNum] >= 48 && s[firstNum] <= 57); firstNum++)
+	//check for empty string
+	if (*str == NULL || *s == '\0')
 	{
-		if (s[firstNum] == '-')
+		fprintf(stderr, "Error: Empty string entered\n");
+		return (0);
+	}
+
+	//skip leading whitespaces
+	if (*str == ' ' || *str == '\t')
+	{
+		str++;
+	}
+
+	//check for sign
+	if (*str == '-')
+	{
+		sign = -1;
+		str++;
+	}
+	else if (*str == '+')
+	{
+		str++;
+	}
+	//check if string contain a non digit character
+	for(i = 0; s[i] != '\n'; i++)
+	{
+		if (s[i] < 48 || s[i] > 57)
 		{
-			sign *= -1;
+			fprintf(stderr, "Error: Non-digit character '%c' entered", s[i]);
+			return (0);
 		}
 	}
-
-	for (i = firstNum; s[i] >= 48 && s[i] <= 57; i++)
+	//convert the string to integer
+	for (i = 0; s[i] != '\0'; i++)
+		result = result * 10 + (s[i] -'0');
+	//check for overflow
+	if (result > INT_MAX)
 	{
-		resp *= 10;
-		resp += (s[i] - 48);
+		fprintf(stderr, "Error: Integer overflow\n");
+		return (sign == 1 ? INT_MAX : INT_MIN);
 	}
+	return (sign * (int)result);
 
-	return (sign * resp);
 }
 
 /**
