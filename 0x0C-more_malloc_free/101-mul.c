@@ -3,50 +3,50 @@
 
 /**
  * _puts - this function prints a string, followed by a new line,
- * @string: pointer to the string to print
+ * @str: pointer to the string to print
  * Return: void
  */
-void _puts(char *string)
+void _puts(char *str)
 {
 	int i = 0;
 
-	while (string[i])
+	while (str[i])
 	{
-		_putchar(string[i]);
+		_putchar(str[i]);
 		i++;
 	}
 
 }
 
 /**
- * _atoi - this function converts strings to an integers.
+ * _atoi - this function converts a string to an integer.
  * @s: char type string
  * Return: integer converted
  */
-int _atoi(const char *string)
+int _atoi(const char *s)
 {
 	int sign = 1;
 	unsigned long int resp = 0, firstNum, i;
 
-	for (firstNum = 0; !(string[firstNum] >= 48 && string[firstNum] <= 57); firstNum++)
+	for (firstNum = 0; !(s[firstNum] >= 48 && s[firstNum] <= 57); firstNum++)
 	{
-		if (string[firstNum] == '-')
+		if (s[firstNum] == '-')
 		{
 			sign *= -1;
 		}
 	}
 
-	for (i = firstNum; string[i] >= 48 && string[i] <= 57; i++)
+	for (i = firstNum; s[i] >= 48 && s[i] <= 57; i++)
 	{
 		resp *= 10;
-		resp += (string[i] - 48);
+		resp += (s[i] - 48);
 	}
 
 	return (sign * resp);
 }
 
 /**
- * print_int - this prints an integer.
+ * print_int - this function prints an integer.
  * @n: integer value
  * Return: 0
  */
@@ -67,12 +67,12 @@ void print_int(unsigned long int n)
 }
 
 /**
- * main - print the result of the multiplication, followed by a new line
- * @argc: int
- * @argv: list
+ * main - this function print the result of the multiplication,
+ * followed by a new line
+ * @argc: integer value
+ * @argv: array of numbers
  * Return: 0
  */
-
 int main(int argc, char const *argv[])
 {
 	(void)argc;
