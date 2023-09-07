@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdbool.h>
+#include <limits.h>
 
 /**
  * _puts - this function prints a string, followed by a new line,
@@ -15,7 +17,6 @@ void _puts(char *str)
 		_putchar(str[i]);
 		i++;
 	}
-
 }
 
 /**
@@ -30,18 +31,16 @@ int _atoi(const char *str)
 	unsigned int k;
 
 	//check for empty string
-	if (*str == NULL || *s == '\0')
+	if (str == NULL || *str == '\0')
 	{
-		fprintf(stderr, "Error: Empty string entered\n");
+		/*fprintf(stderr, "Error: Empty string entered\n");*/
 		return (0);
 	}
-
 	//skip leading whitespaces
 	if (*str == ' ' || *str == '\t')
 	{
 		str++;
 	}
-
 	//check for sign
 	if (*str == '-')
 	{
@@ -53,25 +52,24 @@ int _atoi(const char *str)
 		str++;
 	}
 	//check if string contain a non digit character
-	for(i = 0; s[i] != '\n'; i++)
+	for(k = 0; s[k] != '\n'; k++)
 	{
 		if (s[i] < 48 || s[i] > 57)
 		{
-			fprintf(stderr, "Error: Non-digit character '%c' entered", s[i]);
+			/*fprintf(stderr, "Error: Non-digit character '%c' entered", s[i]);*/
 			return (0);
 		}
 	}
 	//convert the string to integer
-	for (i = 0; s[i] != '\0'; i++)
+	for (k = 0; s[i] != '\0'; k++)
 		result = result * 10 + (s[i] -'0');
 	//check for overflow
 	if (result > INT_MAX)
 	{
-		fprintf(stderr, "Error: Integer overflow\n");
+		/*fprintf(stderr, "Error: Integer overflow\n");*/
 		return (sign == 1 ? INT_MAX : INT_MIN);
 	}
 	return (sign * (int)result);
-
 }
 
 /**
