@@ -15,4 +15,4 @@ int main(void)
     printf("%s\n", concat);
     free(concat);
     return (0);
-}#includ
+}
