@@ -23,8 +23,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return(NULL);
 	for(; i < n; i++)
 	{
-		if(i <= k)
-			pntr[i] = s1[k];
+		if(i < k)
+			pntr[i] = s1[i];
 		else
 			pntr[i] = s2[i - k];
 	}
