@@ -1,4 +1,4 @@
-# structure and typedef
+# Structure and Typedef
 
-this directory demonstrates the use of structures and
+This directory demonstrates the use of structures and
 typedefs in building custom data types
