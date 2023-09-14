@@ -1,6 +1,5 @@
 #include "variadic_functions.h"
 
-
 /**
  * print_char - this function prints a character
  * @argument: the va_list with the character to print as it's next element
@@ -21,7 +20,6 @@ int print_float(va_list argument)
 	return (printf("%f", va_arg(argument, double)));
 }
 
-
 /**
  * print_int - this function prints an integer
  * @argument: this is the va_list with the integer to print as it's next element
@@ -31,7 +29,6 @@ int print_int(va_list argument)
 {
 	return (printf("%i", va_arg(argument, int)));
 }
-
 
 /**
  * print_str - this function prints a string
@@ -46,7 +43,6 @@ int print_str(va_list args)
 		str = "(nil)";
 	return (printf("%s", str));
 }
-
 
 /**
  * print_all - this function prints anything passed in as an argument
