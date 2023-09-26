@@ -1,4 +1,4 @@
-#include "main.h"
+#include "list.h"
 
 /**
  * free_listint - this function frees the memories allocated
