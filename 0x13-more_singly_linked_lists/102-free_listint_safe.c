@@ -11,7 +11,7 @@
  * @new: this is the new node to add to the list
  * Return: pointer to the new list
  */
-listint_t **_ra(listint_t **list, size_t size, listint_t *new)
+listint_t **_reallocator(listint_t **list, size_t size, listint_t *new)
 {
 	listint_t **new_list;
 	size_t k;
