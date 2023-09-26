@@ -13,20 +13,20 @@
  */
 listint_t **_reallocator(listint_t **list, size_t size, listint_t *new)
 {
-	listint_t **new_list;
-	size_t k;
+        listint_t **new_list;
+        size_t k;
 
-	new_list = malloc(size * sizeof(listint_t *));
-	if (new_list == NULL)
-	{
-		free(list);
-		exit(98);
-	}
-	for (k = 0; k < size - 1; k++)
-		new_list[k] = list[k];
-	new_list[k] = new;
-	free(list);
-	return (new_list);
+        new_list = malloc(size * sizeof(listint_t *));
+        if (new_list == NULL)
+        {
+                free(list);
+                exit(98);
+        }
+        for (k = 0; k < size - 1; k++)
+                new_list[k] = list[k];
+        new_list[k] = new;
+        free(list);
+        return (new_list);
 }
 
 /**
@@ -37,29 +37,29 @@ listint_t **_reallocator(listint_t **list, size_t size, listint_t *new)
  */
 size_t free_listint_safe(listint_t **head)
 {
-	size_t k, nmb = 0;
-	listint_t **list = NULL;
-	listint_t *next;
+        size_t k, nmb = 0;
+        listint_t **list = NULL;
+        listint_t *next;
 
-	if (head == NULL || *head == NULL)
-		return (nmb);
-	while (*head != NULL)
-	{
-		for (k = 0; k < nmb; k++)
-		{
-			if (*head == list[k])
-			{
-				*head = NULL;
-				free(list);
-				return (nmb);
-			}
-		}
-		nmb = nmb + 1;
-		list = _reallocator(list, nmb, *head);
-		next = (*head)->next;
-		free(*head);
-		*head = next;
-	}
-	free(list);
-	return (nmb);
+        if (head == NULL || *head == NULL)
+                return (nmb);
+        while (*head != NULL)
+        {
+                for (k = 0; k < nmb; k++)
+                {
+                        if (*head == list[k])
+                        {
+                                *head = NULL;
+                                free(list);
+                                return (nmb);
+                        }
+                }
+                nmb = nmb + 1;
+                list = _reallocator(list, nmb, *head);
+                next = (*head)->next;
+                free(*head);
+                *head = next;
+        }
+        free(list);
+        return (nmb);
 }
