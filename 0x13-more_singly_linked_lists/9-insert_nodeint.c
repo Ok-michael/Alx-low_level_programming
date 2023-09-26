@@ -7,7 +7,7 @@
  * @n: this the value to be added at  the new node
  * Return: this function returns a pointer to the new node
  */
-listint_t *insert_node_at_index(listint_t **head, unsigned int idx, int n)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
         listint_t *tmpr;
         listint_t *new_node;
