@@ -7,7 +7,7 @@
  *
  * Return: this function returns the converted unsigned integer value
  */
-igned int binary_to_uint(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	unsigned int uns_int;
 	int length, base_two;
