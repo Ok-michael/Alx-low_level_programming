@@ -13,7 +13,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int diff, cntr = 0, k = 0, chk = 1;
 
 	diff = n ^ m;
-	while (k < (sizof(unsigned long int) * 8))
+	while (k < (sizeof(unsigned long int) * 8))
 	{
 		if (chk == (diff & chk))
 		{
@@ -22,5 +22,5 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		chk <<= 1;
 		k++;
 	}
-	return (count);
+	return (cntr);
 }
