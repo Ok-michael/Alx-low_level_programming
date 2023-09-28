@@ -12,12 +12,14 @@ unsigned int binary_to_uint(const char *b)
 	int length = 0, base_two = 1;
 	unsigned int uns_int = 0;
 
-	if (if b == 0)
+	if (!b)
 		return (0);
+	if (!strcmp(b, "1"))
+		return (1);
 	while (b[length])
-		length ++;
+		length++;
 	length--;
-	while (length >= 0)
+	while (length > 0)
 	{
 		length--;
 		base_two = base_two * 2;
@@ -29,6 +31,8 @@ unsigned int binary_to_uint(const char *b)
 		{
 			uns_int += base_two;
 		}
+		/*length--;*/
+		/*base_two = base_two * 2;*/
 	}
 	return (uns_int);
 }
