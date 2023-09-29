@@ -1,6 +1,4 @@
-#!/bin/bash
-
-# Get pass script
+}ss script
 echo -e
 echo -e "Fetching start file ..."
 echo -e
